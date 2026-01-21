@@ -1,0 +1,41 @@
+
+> my-v0-project@0.1.0 build C:\Users\Paulo H\Desktop\SEED - calendário
+> next build
+
+⚠ `eslint` configuration in next.config.mjs is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.mjs options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\Paulo H\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Paulo H\Desktop\SEED - calendário\pnpm-lock.yaml
+
+▲ Next.js 16.1.4 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./Desktop/SEED - calendário/app/globals.css:2069:20
+Parsing CSS source code failed
+[0m [90m 2067 |[39m }
+ [90m 2068 |[39m [33m.[39m[37m[41m[1m\[22m[49m[39m[[33m--[39mcell[33m-[39msize[37m[41m[1m\[22m[49m[39m[33m:[39m[33m--[39mspacing[37m[41m[1m\[22m[49m[39m([35m8[39m[37m[41m[1m\[22m[49m[39m)[37m[41m[1m\[22m[49m[39m] {
+[31m[1m>[22m[39m[90m 2069 |[39m   [33m--[39mcell[33m-[39msize[33m:[39m [36mvar[39m([33m--[39mspacing([35m8[39m))[33m;[39m
+ [90m      |[39m                    [31m[1m^[22m[39m
+ [90m 2070 |[39m }
+ [90m 2071 |[39m [33m.[39mfile[37m[41m[1m\[22m[49m[39m[33m:[39mborder[33m-[39m[35m0[39m[33m:[39m[33m:[39mfile[33m-[39mselector[33m-[39mbutton {
+ [90m 2072 |[39m   border[33m-[39mwidth[33m:[39m [35m0[39mpx[33m;[39m[0m
+
+Unexpected token Function("--spacing")
+
+Import trace:
+  Client Component Browser:
+    ./Desktop/SEED - calendário/app/globals.css [Client Component Browser]
+    ./Desktop/SEED - calendário/app/layout.tsx [Server Component]
+
+
+    at <unknown> (./Desktop/SEED - calendário/app/globals.css:2069:20)
+ ELIFECYCLE  Command failed with exit code 1.
